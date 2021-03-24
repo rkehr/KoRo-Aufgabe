@@ -7,10 +7,10 @@ const InfoAreaContainer = ({ infoData, activeTextCallback }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   useEffect(() => {
     activeTextCallback(infoData[activeIndex]);
-  }, [activeIndex, activeTextCallback]);
+  }, [activeIndex, activeTextCallback, infoData]);
   return (
     <div className="info-area-container">
-      {infoData.map(([h, p], index) => {
+      {infoData.map((_, index) => {
         return (
           <InfoArea
             key={index}
@@ -22,6 +22,9 @@ const InfoAreaContainer = ({ infoData, activeTextCallback }) => {
     </div>
   );
 };
-InfoAreaContainer.propTypes = {};
+InfoAreaContainer.propTypes = {
+  infoData: PropTypes.object,
+  activeTextCallback: PropTypes.func,
+};
 
 export default InfoAreaContainer;
