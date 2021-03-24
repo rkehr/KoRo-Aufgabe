@@ -8,7 +8,7 @@ Der dev server kann mit ´´´yarn dev´´´ gestartet werden
 
 esLint kann mit ´´´yarn lint´´´ ausgeführt werden
 
-Wen ihr wissen möchtet wie weit ich in ca. 3h gekommen bin einfach zum commit a10079e5b1ee278fdcda6d391fa775a622cb8d63 zurückgehen
+Wenn Ihr wissen möchtet wie weit ich in ca. 3h gekommen bin einfach zum commit a10079e5b1ee278fdcda6d391fa775a622cb8d63 zurückgehen
 
 ## Fazit:
 
