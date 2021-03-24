@@ -1,4 +1,5 @@
-@import "devices.scss";
+@use 'components';
+@import 'devices.scss';
 html::-webkit-scrollbar {
   display: none;
 }
@@ -6,25 +7,34 @@ html::-webkit-scrollbar {
   display: none;
 }
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
   scrollbar-width: none;
+  transition: opacity 0.3s ease-in-out;
 }
 
 html {
   @include for-phone-only {
-    font-size: 75%;
+    font-size: 100%;
   }
+  font-size: 125%;
   font-display: swap;
 }
 
 body {
   margin: 0;
 }
-
-.app {
+@font-face {
+  font-family: axiforma;
+  src: url(https://www.korodrogerie.de/fonts/axiforma_light.woff2);
+}
+@font-face {
+  font-family: axiformaheavy;
+  src: url(https://www.korodrogerie.de/fonts/axiforma_heavy.woff2);
+}
+#app {
   position: relative;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-family: semplicitapro, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: axiforma, sans-serif;
   font-weight: 300;
   font-style: normal;
   box-sizing: border-box;
@@ -36,14 +46,15 @@ body {
   width: 100vw;
   height: 100vh;
 }
+a,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: heimat-mono, sans-serif;
-  font-weight: 300;
+  font-family: axiformaheavy, sans-serif;
+  font-weight: 700;
 }
 h1 {
   font-size: 2.8rem;
@@ -55,4 +66,18 @@ h2 {
 
 button {
   font-size: 100%;
+}
+section {
+  margin-top: 7.5rem;
+  width: 100%;
+  @include for-tablet-landscape-up {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.text-display {
+  margin-top: 2rem;
+  box-shadow: 0 5px 20px -1px rgba(0, 0, 0, 0.11);
+  padding: 2rem;
 }

@@ -1,0 +1,10 @@
+.info-area-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}

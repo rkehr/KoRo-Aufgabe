@@ -1,0 +1,8 @@
+.info-area {
+  opacity: 0;
+  flex-grow: 1;
+  background-color: #000;
+  &.active {
+    opacity: 0.75;
+  }
+}
