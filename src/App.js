@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Switch, Route, Redirect, useLocation, Link } from 'react-router-dom';
+import { Switch, Route, Redirect, Link } from 'react-router-dom';
 
 import { InfoImage, UploadInfoImage } from './components';
 import { mockData } from './data';

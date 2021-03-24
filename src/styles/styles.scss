@@ -23,18 +23,10 @@ html {
 body {
   margin: 0;
 }
-@font-face {
-  font-family: axiforma;
-  src: url(https://www.korodrogerie.de/fonts/axiforma_light.woff2);
-}
-@font-face {
-  font-family: axiformaheavy;
-  src: url(https://www.korodrogerie.de/fonts/axiforma_heavy.woff2);
-}
+
 #app {
   position: relative;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-family: axiforma, sans-serif;
   font-weight: 300;
   font-style: normal;
   box-sizing: border-box;
@@ -53,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: axiformaheavy, sans-serif;
+  font-family: Segue UI, sans-serif;
   font-weight: 700;
 }
 h1 {

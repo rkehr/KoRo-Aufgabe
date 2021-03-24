@@ -10,7 +10,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  span {
+  &.active::after {
+    width: 85%;
+    height: 85%;
+    top: 7.5%;
+    left: 7.5%;
   }
   &::after {
     content: '';
@@ -21,5 +25,10 @@
     left: 12.5%;
     border: black 2px dashed;
     border-radius: 2rem;
+    transition: width 0.1s ease-in-out, height 0.1s ease-in-out,
+      top 0.1s ease-in-out, left 0.1s ease-in-out;
+  }
+  .file-name {
+    font-weight: 700;
   }
 }

@@ -1,0 +1,10 @@
+.info-text-input {
+  & > * {
+    display: block;
+    width: 15rem;
+    margin: 0.5rem auto;
+  }
+  margin: 1.5rem 0.5rem;
+  padding: 1rem 0;
+  box-shadow: 0 5px 20px -1px rgba(0, 0, 0, 0.11);
+}
