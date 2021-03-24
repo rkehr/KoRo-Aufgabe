@@ -18,11 +18,11 @@ Eine spannende Aufgabe, allerdings hätte ich für die Umsetzung in 3-4 Stunden 
 
 Ich habe am Ende eine Gut 5 1/2 Stunden Zeit gebraucht für die ganze Aufgabe. Und selbst dabei sind noch einige Dinge hinten runter gefallen:
 
-- Das Uploadformular hat noch keine funktion. Der nächste Schritt wäre es alle Daten in UploadInfoImage in ein FormaData Objekt zusammenzufassen und mittels ines <button>s an eine API Schnittstelle zu senden. Die Infotexte sind allerdings schon im richtigen format vorhanden.
-- Die delete- <button>s sind nicht angemessen gestylt
-- Der Container für die <InfoArea>s ist ein kleines bisschen höher als das Bild, ich konnte auf die schnelle nicht herausfinden warum.
-- Animationen würden der User Experience an verschiedenen stellen noch sehr helfen, Beispiele hierfür sind die <InfoTextInput> karten oder auch der InfoText in der Anzeige.
+- Das Uploadformular hat noch keine funktion. Der nächste Schritt wäre es alle Daten in UploadInfoImage in ein FormaData Objekt zusammenzufassen und mittels ines \<button\>s an eine API Schnittstelle zu senden. Die Infotexte sind allerdings schon im richtigen format vorhanden.
+- Die delete- \<button\>s sind nicht angemessen gestylt
+- Der Container für die \<InfoArea\>s ist ein kleines bisschen höher als das Bild, ich konnte auf die schnelle nicht herausfinden warum.
+- Animationen würden der User Experience an verschiedenen stellen noch sehr helfen, Beispiele hierfür sind die \<InfoTextInput\> karten oder auch der InfoText in der Anzeige.
 - Die PropType validation für die Uploadsektion fehlt.
 - Hätte ich ewig Zeit gehabt hätte ich gerne noch tests geschrieben, zum glück habe ich mir das immerhin erstmal gespart.
-- <InfoTextInputGroup> bräuchte dringend Kommentare oder müsste nochmal sauber gerefactored werden
-- Das <InfoImage> display ist noch nicht für mobil optimiert, das wäre allerdings ein schneller fix
+- \<InfoTextInputGroup\> bräuchte dringend Kommentare oder müsste nochmal sauber gerefactored werden
+- Das \<InfoImage\> display ist noch nicht für mobil optimiert, das wäre allerdings ein schneller fix
