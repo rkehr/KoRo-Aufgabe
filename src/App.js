@@ -1,13 +1,38 @@
-import React from 'react';
-import { Switch, Route, Redirect, useLocation } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Switch, Route, Redirect, useLocation, Link } from 'react-router-dom';
 
 import InfoImage from './components/InfoImage';
 import { mockData } from './data';
 
 const App = () => {
+  const [activeText, setActiveText] = useState(['', '']);
   const exampleData = mockData[0];
 
-  return <InfoImage data={exampleData}></InfoImage>;
+  return (
+    <>
+      <nav>
+        <Link to="/display">Display</Link>
+        <Link to="/upload">Upload</Link>
+      </nav>
+      <Switch>
+        <Route path="/display">
+          <section>
+            <InfoImage data={exampleData} activeTextCallback={setActiveText} />
+            <div className="text-display">
+              <h3>{activeText[0]}</h3>
+              <p>{activeText[1]}</p>
+            </div>
+          </section>
+        </Route>
+        <Route path="/upload">
+          <section>
+            <h1>TEST!</h1>
+          </section>
+        </Route>
+        <Redirect to={'/display'} />
+      </Switch>
+    </>
+  );
 };
 
 export default App;
