@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Switch, Route, Redirect, useLocation, Link } from 'react-router-dom';
 
-import InfoImage from './components/InfoImage';
+import { InfoImage, UploadInfoImage } from './components';
 import { mockData } from './data';
 
 const App = () => {
@@ -26,7 +26,7 @@ const App = () => {
         </Route>
         <Route path="/upload">
           <section>
-            <h1>TEST!</h1>
+            <UploadInfoImage> </UploadInfoImage>
           </section>
         </Route>
         <Redirect to={'/display'} />

@@ -1,4 +1,4 @@
+import InfoImage from './InfoImage';
+import UploadInfoImage from './UploadInfoImage';
 
-
-export {
-};
+export { InfoImage, UploadInfoImage };
